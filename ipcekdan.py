@@ -1,4 +1,5 @@
 import requests
+import pyfiglet
 
 def lacak_ip(ip_address):
     # URL API ipinfo.io
@@ -30,6 +31,11 @@ RESET = "\033[0m"
 
 # Contoh penggunaan
 if __name__ == "__main__":
-    ip = input(f"{GREEN}  Masukkan alamat IP yang ingin dilacak: {RESET}")
+    # Print "danvertt" in large ASCII art and green
+    ascii_art = pyfiglet.figlet_format("Danvertt")
+    print(f"{GREEN}{ascii_art}{RESET}")
+    print(f"{GREEN}TOOLS TRACK FULL IP ADDRESS{RESET}")
+    
+    # Prompt for IP address with green text and two spaces before
+    ip = input(f"  {GREEN}Masukkan alamat IP yang ingin dilacak: {RESET}")
     lacak_ip(ip)
-
