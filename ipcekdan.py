@@ -1,7 +1,7 @@
 import requests
 import pyfiglet
 
-def lacak_ip(ip_address):
+def ipcekdan(ip_address):
     # URL API ipinfo.io
     url = f"http://ipinfo.io/{ip_address}/json"
     
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     
     # Prompt for IP address with green text and two spaces before
     ip = input(f"  {GREEN}Masukkan alamat IP yang ingin dilacak: {RESET}")
-    lacak_ip(ip)
+    ipcekdan(ip)
