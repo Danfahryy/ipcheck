@@ -9,7 +9,8 @@ How to run in termux ?
 7. ls
 8. cd ipcheck
 9. pip install requests
-10. python ipcekdan.py
+10. pip install pyfiglet
+11. python ipcekdan.py
 
 
 
