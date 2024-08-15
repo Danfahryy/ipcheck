@@ -24,7 +24,12 @@ def lacak_ip(ip_address):
     except requests.RequestException as e:
         print(f"Terjadi kesalahan: {e}")
 
+# ANSI escape codes for green text
+GREEN = "\033[92m"
+RESET = "\033[0m"
+
 # Contoh penggunaan
 if __name__ == "__main__":
-    ip = input("Masukkan alamat IP yang ingin dilacak: ")
+    ip = input(f"{GREEN}  Masukkan alamat IP yang ingin dilacak: {RESET}")
     lacak_ip(ip)
+
